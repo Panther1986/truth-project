@@ -79,7 +79,7 @@ body::-webkit-scrollbar-track {
   }
 }
 
-main {
+/* main {
   margin-top: -132px;
 
   @media (768px <=width) {
@@ -89,4 +89,4 @@ main {
   @media (width >=1440px) {
     margin-top: -152px;
   }
-}
+} */

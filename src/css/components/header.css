@@ -10,7 +10,7 @@
   border-radius: 15px;
   background-color: transparent;
 
-  padding: 72px 16px 54px 16px;
+  padding-top: 24px;
 
   @media (768px <=width) {
     height: 140px;

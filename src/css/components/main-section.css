@@ -1,0 +1,30 @@
+.hero-wrapper {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.hero-first-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-transform: uppercase;
+  text-align: left;
+
+  width: 343px;
+  height: 88px;
+}
+.hero-second-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
