@@ -9,5 +9,11 @@
     <symbol id="icon-Icon" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M28.444 3.556l-24.889 24.889M3.556 3.556l24.889 24.889"></path>
 </symbol>
+<symbol id="icon-Vector-3" viewBox="0 0 46 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M1.778 1.778h42.667M1.778 16h42.667M1.778 30.222h42.667"></path>
+</symbol>
+<symbol id="icon-Burger" viewBox="0 0 44 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M2.182 16h39.273M2.182 2.909h39.273M15.273 29.091h26.182"></path>
+</symbol>
  </defs>
 </svg>
