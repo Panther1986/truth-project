@@ -1,0 +1,41 @@
+.container-about-me {
+  @media (width >= 768px) and (width < 1440px) {
+    padding: 0 32px;
+  }
+  @media (width >= 1440px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.section-about {
+  background-color: #f3f3f3;
+}
+.about-me-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+.about-me-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28.5px;
+  letter-spacing: 0;
+  padding-bottom: 32px;
+}
+.about-me-text-signature {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding-bottom: 48px;
+}
