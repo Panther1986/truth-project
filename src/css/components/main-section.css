@@ -1,7 +1,23 @@
-.hero-wrapper {
+/* .hero-wrapper {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero-wrapper {
+    width: 680px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+  }
 }
 .hero-first-text {
   font-family: 'Inter', sans-serif;
@@ -27,4 +43,101 @@
   line-height: 28px;
   letter-spacing: 0;
   text-transform: uppercase;
+} */
+.hero-section {
+  /* background-color: #666;  */
+  color: #f3f3f3;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 40px 16px;
+  box-sizing: border-box;
+}
+
+.hero-wrapper {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.hero-text-group {
+  max-width: 100%;
+}
+
+/* === Базовые стили (мобилка) === */
+.hero-first-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #f3f3f3;
+}
+
+.hero-second-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #f3f3f3;
+}
+
+.hero-author {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: left;
+  color: #f3f3f3;
+}
+
+/* === Планшет (768px+) === */
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding: 60px 40px;
+  }
+
+  .hero-first-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .hero-second-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero-author {
+    font-size: 16px;
+  }
+}
+
+/* === Десктоп (1440px+) === */
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    padding: 80px;
+  }
+
+  .hero-text-group {
+    max-width: 800px;
+  }
+
+  .hero-first-text {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .hero-second-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .hero-author {
+    font-size: 18px;
+  }
 }
