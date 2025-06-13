@@ -63,10 +63,12 @@
 
 .reforms-container-text {
   width: 307px;
-  height: 354px;
+  height: auto;
+  transition: height 0.3s ease;
 }
 .reforms-btn-read-full {
   margin-top: 32px;
+  margin-bottom: 32px;
   width: 177px;
   height: 40px;
   border-radius: 40px;

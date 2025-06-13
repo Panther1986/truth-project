@@ -63,7 +63,8 @@
 
 .low-container-text {
   width: 307px;
-  height: 354px;
+  height: auto;
+  transition: height 0.3s ease;
 }
 .low-btn-read-full {
   margin-top: 32px;
@@ -75,4 +76,5 @@
   color: #345742;
 
   background-color: transparent;
+  margin-bottom: 32px;
 }
