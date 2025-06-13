@@ -1,4 +1,4 @@
-.reforms-main-container {
+.investment-main-container {
   @media (width >= 768px) and (width < 1440px) {
     padding: 0 32px;
   }
@@ -7,11 +7,11 @@
     flex-direction: row;
   }
 }
-.section-reforms {
-  background-color: #f3f3f3;
+.section-investment {
+  background-color: #e4e4e4;
 }
 
-.reforms-main-title {
+.investment-main-title {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 28px;
@@ -22,7 +22,7 @@
   margin-bottom: 8px;
 }
 
-.reforms-first-title {
+.investment-first-title {
   padding-top: 48px;
   padding-bottom: 32px;
   font-family: 'Inter', sans-serif;
@@ -32,7 +32,18 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.reforms-article-title {
+.investment-epigraph {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+.investment-article-title {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -44,7 +55,7 @@
 
   padding-bottom: 32px;
 }
-.reforms-text {
+.investment-text {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -57,15 +68,15 @@
   transition: max-height 0.3s ease;
 }
 
-.reforms-text.expanded {
+.investment-text.expanded {
   max-height: 10000px;
 }
 
-.reforms-container-text {
+.investment-container-text {
   width: 307px;
   height: 354px;
 }
-.reforms-btn-read-full {
+.investment-btn-read-full {
   margin-top: 32px;
   width: 177px;
   height: 40px;
@@ -73,4 +84,6 @@
   border: 1px solid #345742;
   cursor: pointer;
   color: #345742;
+
+  background-color: transparent;
 }
