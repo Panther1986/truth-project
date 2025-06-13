@@ -1,12 +1,19 @@
 .container-about-me {
-  @media (width >= 768px) and (width < 1440px) {
-    padding: 0 32px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+    width: 680px;
+    padding: 0;
   }
-  @media (width >= 1440px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
+
 .section-about {
   background-color: #f3f3f3;
 }
@@ -19,6 +26,13 @@
   text-transform: uppercase;
   padding-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .about-me-title {
+    font-weight: 400;
+    font-size: 32px;
+  }
+}
+
 .about-me-text {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
@@ -26,6 +40,12 @@
   line-height: 28.5px;
   letter-spacing: 0;
   padding-bottom: 32px;
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .about-me-text {
+    font-size: 16px;
+  }
 }
 .about-me-text-signature {
   font-family: 'Inter', sans-serif;
