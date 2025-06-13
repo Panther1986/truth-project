@@ -22,7 +22,14 @@
     padding-top: 64px;
   }
 }
-
+.logo-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
 .header-modal-wrapper-select-box-container {
   display: flex;
   align-items: center;
