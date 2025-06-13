@@ -1,0 +1,75 @@
+.reforms-main-container {
+  @media (width >= 768px) and (width < 1440px) {
+    padding: 0 32px;
+  }
+  @media (width >= 1440px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.section-reforms {
+  background-color: #f3f3f3;
+}
+
+.reforms-main-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+
+  margin-bottom: 8px;
+}
+
+.reforms-first-title {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.reforms-article-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 32px;
+}
+.reforms-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28.5px;
+  letter-spacing: 0;
+
+  max-height: 120px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.3s ease;
+}
+
+.reforms-text.expanded {
+  max-height: 10000px;
+}
+
+.reforms-container-text {
+  width: 307px;
+  height: 354px;
+}
+.reforms-btn-read-full {
+  margin-top: 32px;
+  width: 177px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #345742;
+  cursor: pointer;
+}
