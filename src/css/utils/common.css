@@ -9,7 +9,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.25;
-  background-color: var(--body-bg);
+  background-color: #a8b092;
   overflow-x: hidden !important;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -1,5 +1,5 @@
 .header {
-  background-color: #777777;
+  background-color: #a8b092;
 }
 .header-modal-container {
   width: 100%;
@@ -208,6 +208,7 @@
   padding: 12px 10px 10px 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-modal-selectlang-checkbox {
@@ -278,7 +279,7 @@
     align-items: center;
     justify-content: center;
     color: #f3f3f3;
-    background-color: #777777;
+    background-color: #a8b092;
   }
 }
 .header-contents-list {

@@ -1,120 +1,126 @@
+import localizationData from '../assets/translations/index.js';
+
+function getValueByPath(obj, path) {
+  return path.split('.').reduce((acc, key) => acc?.[key], obj);
+}
+
+function localizeElements(lang) {
+  const elements = document.querySelectorAll('[data-lang]');
+  const localization = localizationData[lang] || {};
+
+  elements.forEach(el => {
+    const key = el.getAttribute('data-lang');
+    const val = getValueByPath(localization, key);
+    if (val !== undefined) el.innerHTML = val;
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const burgerBtn = document.querySelector('.header-burger-container');
-  const mobileMenuEl = document.querySelector('.header-modal-wrapper');
-  const mobileMenuCloseBtn = document.querySelector(
+  const mobileMenu = document.querySelector('.header-modal-wrapper');
+  const closeBtn = document.querySelector(
     '.header-modal-wrapper-item-svg-close-container'
   );
-  const bodyEl = document.querySelector('body');
+  const body = document.body;
 
-  // Открытие и закрытие мобильного меню
-  function toggleOpenModal() {
-    mobileMenuEl.classList.toggle('active');
-    bodyEl.classList.toggle('is-hidden');
+  function toggleMenu() {
+    mobileMenu.classList.toggle('active');
+    body.classList.toggle('is-hidden');
   }
+  burgerBtn?.addEventListener('click', toggleMenu);
+  closeBtn?.addEventListener('click', toggleMenu);
 
-  burgerBtn?.addEventListener('click', toggleOpenModal);
-  mobileMenuCloseBtn?.addEventListener('click', toggleOpenModal);
-
-  // Закрытие модалки по клику на ссылки
-  const modalLinks = document.querySelectorAll(
-    '.modal-header-contents-item-link'
-  );
-  modalLinks.forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const href = link.getAttribute('href');
-      const target = document.querySelector(href);
-
-      // Закрыть модалку
-      mobileMenuEl.classList.remove('active');
-      bodyEl.classList.remove('is-hidden');
-
-      // Прокрутить до секции
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
+  document
+    .querySelectorAll('.modal-header-contents-item-link')
+    .forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        toggleMenu();
+        const href = link.getAttribute('href');
+        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+      });
     });
-  });
 
-  // Выбор языка — МОДАЛКА
-  const toggleBtnModal = document.querySelector(
+  // Модалка выбор языка
+  const toggleModalLang = document.querySelector(
     '.header-modal-wrapper-select-box-container'
   );
   const dropdownModal = document.querySelector(
     '.header-modal-selectlang-checkbox'
   );
-  const displayTextModal = document.querySelector(
+  const displayModal = document.querySelector(
     '.header-modal-wrapper-select-box-container-text-modal'
   );
-  const langButtonsModal = document.querySelectorAll(
+  const modalLangs = document.querySelectorAll(
     '.header-modal-wrapper-select-box-checkbox-text-ua'
   );
 
-  toggleBtnModal?.addEventListener('click', () => {
+  toggleModalLang?.addEventListener('click', () => {
     dropdownModal.classList.toggle('active-modal');
   });
 
-  langButtonsModal.forEach(btn => {
-    btn.addEventListener('click', e => {
-      const selectedLang = e.target.textContent.trim();
-      displayTextModal.textContent = selectedLang;
-      langButtonsModal.forEach(b =>
+  modalLangs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.textContent.trim().toLowerCase();
+      displayModal.textContent = btn.textContent.trim();
+      modalLangs.forEach(b =>
         b.classList.remove('active-header-checkbox-modal')
       );
       btn.classList.add('active-header-checkbox-modal');
       dropdownModal.classList.remove('active-modal');
-      localStorage.setItem('selectedLang', selectedLang);
+      localStorage.setItem('selectedLang', lang);
+      localizeElements(lang);
     });
   });
 
-  // Выбор языка — ДЕСКТОП
+  // Десктоп выбор языка
   const langToggle = document.getElementById('langToggle');
   const langList = document.getElementById('langList');
-  const langButtons = document.querySelectorAll('.lang-options-item');
+  const desktopLangs = document.querySelectorAll('.lang-options-item');
 
-  langToggle?.addEventListener('click', () => {
-    langList.classList.toggle('hidden');
-  });
+  langToggle?.addEventListener('click', () =>
+    langList.classList.toggle('hidden')
+  );
 
-  langButtons.forEach(btn => {
-    btn.addEventListener('click', e => {
-      const selectedLang = e.target.textContent.trim();
-      langToggle.textContent = `${selectedLang} →`;
-      langButtons.forEach(b =>
+  desktopLangs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.textContent.trim().toLowerCase();
+      langToggle.textContent = `${btn.textContent.trim()} →`;
+      desktopLangs.forEach(b =>
         b.classList.remove('active-header-checkbox-modal')
       );
       btn.classList.add('active-header-checkbox-modal');
       langList.classList.add('hidden');
-      localStorage.setItem('selectedLang', selectedLang);
+      localStorage.setItem('selectedLang', lang);
+      localizeElements(lang);
     });
   });
 
-  // Установка сохранённого языка
-  const savedLang = localStorage.getItem('selectedLang');
-  if (savedLang) {
-    if (displayTextModal) displayTextModal.textContent = savedLang;
-    if (langToggle) langToggle.textContent = `${savedLang} →`;
+  // Загрузка сохранённого
+  const saved = localStorage.getItem('selectedLang')?.toLowerCase();
+  const lang = saved || 'ru';
+  if (displayModal) displayModal.textContent = lang.toUpperCase();
+  if (langToggle) langToggle.textContent = `${lang.toUpperCase()} →`;
+  modalLangs.forEach(btn => {
+    btn.classList.toggle(
+      'active-header-checkbox-modal',
+      btn.textContent.trim().toLowerCase() === lang
+    );
+  });
+  desktopLangs.forEach(btn => {
+    btn.classList.toggle(
+      'active-header-checkbox-modal',
+      btn.textContent.trim().toLowerCase() === lang
+    );
+  });
 
-    langButtonsModal.forEach(btn => {
-      btn.classList.toggle(
-        'active-header-checkbox-modal',
-        btn.textContent.trim() === savedLang
-      );
-    });
-    langButtons.forEach(btn => {
-      btn.classList.toggle(
-        'active-header-checkbox-modal',
-        btn.textContent.trim() === savedLang
-      );
-    });
-  }
+  localizeElements(lang);
 
-  // Закрытие дропдаунов по клику вне
   document.addEventListener('click', e => {
     if (!langToggle?.contains(e.target) && !langList?.contains(e.target)) {
       langList?.classList.add('hidden');
     }
-    if (!toggleBtnModal?.contains(e.target)) {
+    if (!toggleModalLang?.contains(e.target)) {
       dropdownModal?.classList.remove('active-modal');
     }
   });
