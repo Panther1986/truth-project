@@ -1,6 +1,9 @@
+.sens-main-container {
+  color: #0d0d0d;
+}
 .sens-main-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 28px;
   line-height: 40px;
   letter-spacing: 0;
@@ -32,6 +35,7 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+  color: #0d0d0d;
 }
 .tab {
   display: inline-block;
@@ -39,7 +43,8 @@
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  color: #333;
+  /* color: #333; */
+  color: #0d0d0d;
   border-left: 1px solid #ccc;
   padding-left: 12px;
 }
@@ -79,12 +84,13 @@
 .sens-first-title {
   padding-top: 48px;
   padding-bottom: 32px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: #0d0d0d;
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .sens-first-title {
@@ -104,12 +110,13 @@
   }
 }
 .sens-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28.5px;
   letter-spacing: 0;
   text-align: justify;
+  color: #0d0d0d;
 
   max-height: 120px;
   overflow: hidden;

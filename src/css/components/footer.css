@@ -1,7 +1,8 @@
 .section-footer {
-  background-color: #f3f3f3;
+  background-color: #013220;
   padding-top: 30px;
   padding-bottom: 40px;
+  color: #0d0d0d;
 }
 
 .footer-main-container {
@@ -23,6 +24,7 @@
   flex-direction: column;
   gap: 32px;
   width: 100%;
+  color: #0d0d0d;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,7 +45,7 @@
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
-  color: #333;
+  color: #0d0d0d;
   display: inline-block;
   margin-bottom: 12px;
 }
@@ -55,13 +57,14 @@
   line-height: 32px;
   display: flex;
   align-items: center;
+  color: #0d0d0d;
 }
 
 .footer-media-info-email a {
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
-  color: #333;
+  color: #0d0d0d;
   display: block;
   margin-bottom: 16px;
 }
@@ -99,20 +102,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3f3f3;
+  background-color: #013220;
   border-radius: 50%;
 }
 
 .icon-social {
-  fill: #333735;
-  stroke: #333735;
-  color: #333735;
+  fill: #0d0d0d;
+  stroke: #0d0d0d;
 }
 
 @media screen and (min-width: 1440px) {
   .icon-social {
     width: 38px;
     height: 38px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .you-tube {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -128,6 +136,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 40px;
+  color: #0d0d0d;
 }
 
 .email-input {
@@ -137,8 +146,12 @@
   border: none;
   font-weight: 300;
   background-color: transparent;
+  color: #0d0d0d;
 }
-
+.email-input::placeholder {
+  color: #0d0d0d;
+  opacity: 1;
+}
 @media screen and (min-width: 768px) {
   .email-input {
     font-size: 16px;
@@ -197,4 +210,5 @@
   letter-spacing: 0;
   display: flex;
   align-items: center;
+  color: #0d0d0d;
 }

@@ -9,7 +9,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.25;
-  background-color: #a8b092;
+  background-color: #013220;
   overflow-x: hidden !important;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb-bg);
+  background: #013220;
   border-radius: 20px;
 }
 

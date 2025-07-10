@@ -1,52 +1,5 @@
-/* .hero-wrapper {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .hero-wrapper {
-    width: 680px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .hero-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: none;
-  }
-}
-.hero-first-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-transform: uppercase;
-  text-align: left;
-
-  width: 343px;
-  height: 88px;
-}
-.hero-second-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0;
-  text-transform: uppercase;
-} */
 .hero-section {
-  /* background-color: #666;  */
-  color: #f3f3f3;
+  color: #0d0d0d;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -55,7 +8,10 @@
   padding: 40px 16px;
   box-sizing: border-box;
 }
-
+.hero-second-container {
+  display: flex;
+  gap: 100px;
+}
 .hero-wrapper {
   width: 100%;
   max-width: 1440px;
@@ -67,25 +23,25 @@
 
 /* === Базовые стили (мобилка) === */
 .hero-first-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-family: 'Anton', sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 16px;
-  color: #f3f3f3;
+  color: #0d0d0d;
 }
 
 .hero-second-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 16px;
-  color: #f3f3f3;
+  color: #0d0d0d;
 }
 
 .hero-author {
@@ -93,7 +49,7 @@
   font-weight: 300;
   font-size: 14px;
   text-align: left;
-  color: #f3f3f3;
+  color: #0d0d0d;
 }
 
 /* === Планшет (768px+) === */
@@ -114,6 +70,9 @@
 
   .hero-author {
     font-size: 16px;
+  }
+  .hero-second-container {
+    gap: 200px;
   }
 }
 
@@ -139,5 +98,8 @@
 
   .hero-author {
     font-size: 18px;
+  }
+  .hero-second-container {
+    gap: 300px;
   }
 }

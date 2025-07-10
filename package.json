@@ -19,6 +19,7 @@
   "dependencies": {
     "dotenv": "^16.5.0",
     "modern-normalize": "^3.0.1",
+    "typeface-montserrat": "^1.1.13",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
