@@ -32,7 +32,7 @@
 */ */ .example-breakpoints {
   /* до 360px */
   display: block;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   background-color: #013220;
 

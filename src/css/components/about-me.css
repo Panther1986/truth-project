@@ -1,32 +1,39 @@
-.container-about-me {
-  margin: 0 auto;
-
-  color: #0d0d0d;
-  border: 2px solid #345742;
-  border-radius: 24px;
-  padding: 40px 24px;
-
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-
-  @media screen and (min-width: 768px) and (max-width: 1439.98px) {
-    width: 680px;
-    /* padding: 0; */
-  }
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-
 .section-about {
   background-color: #e4e4e4;
+  color: #0d0d0d;
 
   padding-top: 160px; /* чтобы контент не налезал на фото */
   position: relative;
   z-index: 1;
 }
+.container-about-me {
+  width: 100%;
+  max-width: 680px;
+  box-sizing: border-box;
+
+  border: 2px solid #345742;
+  border-radius: 24px;
+  padding: 40px 24px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container-about-me {
+    width: 680px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+  }
+}
+
 .about-me-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -36,13 +43,23 @@
   text-transform: uppercase;
   padding-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .about-me-title {
-    font-weight: 700;
-    font-size: 32px;
+    width: 100%;
+    max-width: 680px;
+    font-size: 24px;
   }
 }
-
+@media screen and (min-width: 1440px) {
+  .about-me-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+    font-size: 28px;
+  }
+}
 .about-me-text {
   font-family: 'Merriweather', serif;
   font-weight: 300;
@@ -52,8 +69,20 @@
   padding-bottom: 32px;
   text-align: justify;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .about-me-text {
+    width: 100%;
+    max-width: 680px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-me-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
     font-size: 18px;
   }
 }
@@ -67,5 +96,5 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding-bottom: 48px;
+  /* padding-bottom: 48px; */
 }
