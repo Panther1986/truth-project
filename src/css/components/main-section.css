@@ -17,7 +17,7 @@
 .hero-floating-photo-wrapper {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 30%);
+  transform: translate(-10%, 30%);
   z-index: 10;
 }
 .hero-floating-photo {
@@ -71,7 +71,7 @@
     padding: 60px 40px;
   }
   .hero-floating-photo-wrapper {
-    transform: translate(-50%, 20%);
+    transform: translate(25%, 20%);
   }
 
   .hero-first-text {
@@ -117,5 +117,8 @@
   }
   .hero-second-container {
     gap: 300px;
+  }
+  .hero-floating-photo-wrapper {
+    transform: translate(300%, 20%);
   }
 }
