@@ -11,6 +11,19 @@
 .hero-second-container {
   display: flex;
   gap: 100px;
+  position: relative;
+  padding-bottom: 120px;
+}
+.hero-floating-photo-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  z-index: 10;
+}
+.hero-floating-photo {
+  width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 .hero-wrapper {
   width: 100%;
@@ -56,6 +69,9 @@
 @media screen and (min-width: 768px) {
   .hero-section {
     padding: 60px 40px;
+  }
+  .hero-floating-photo-wrapper {
+    transform: translate(-50%, 20%);
   }
 
   .hero-first-text {
