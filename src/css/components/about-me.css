@@ -1,8 +1,9 @@
 .section-about {
-  background-color: #8b9479;
+  background-color: #b3ba99;
   color: #0d0d0d;
 
-  padding-top: 160px; /* чтобы контент не налезал на фото */
+  /* padding-top: 160px;  */
+  /* чтобы контент не налезал на фото */
   position: relative;
   z-index: 1;
 }

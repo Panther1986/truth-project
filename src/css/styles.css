@@ -43,7 +43,7 @@
 
   /* лише проміжок між 360px і 769рх */
   @media (width >=360px) and (width < 768px) {
-    background-color: yellow;
+    background-color: #b3ba99;
   }
 
   /* починаючи з 768px */

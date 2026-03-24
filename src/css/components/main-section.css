@@ -12,7 +12,7 @@
   display: flex;
   gap: 100px;
   position: relative;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 }
 .hero-floating-photo-wrapper {
   position: absolute;
@@ -47,7 +47,7 @@
 }
 
 .hero-second-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -58,7 +58,7 @@
 }
 
 .hero-author {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
   text-align: left;
