@@ -122,7 +122,7 @@ const localizationData = {
       title: 'Johann Wolfgang von Goethe',
       firstParagraph:
         'External brilliance is designed for a moment, and the truth passed into generations...',
-      logo: 'Low association "FAUST"',
+      logo: 'Lawyer"s association "FAUST"',
     },
     about: {
       title: 'About us',
