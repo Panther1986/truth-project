@@ -122,11 +122,11 @@ const localizationData = {
       title: 'Johann Wolfgang von Goethe',
       firstParagraph:
         'External brilliance is designed for a moment, and the truth passed into generations...',
-      logo: 'Lawyer"s association "FAUST"',
+      logo: 'Lawyer"s association "FAYST"',
     },
     about: {
       title: 'About us',
-      text: "Faust Law Firm is a team of lawyers sharing a common goal:to protect rights, restore justice, and provide clients with the highest level of legal support. Our experience includes criminal, commercial, civil, and administrative law, as well as business support, anti-corruption investigations, and defense in highly complex cases. We combine deep knowledge of the law, case law, and strategic thinking—all to achieve results for our clients. For us, every case is not just a process, but a responsibility for the fate of an individual or business. We are trusted because we: <ul><li>🐍 We work honestly and openly;</li> <li>🐍 We don't make empty promises–only real strategies;</li> <li>🐍 We combine professionalism with humanity</li></ul>",
+      text: "Fayst Law Firm is a team of lawyers sharing a common goal:to protect rights, restore justice, and provide clients with the highest level of legal support. Our experience includes criminal, commercial, civil, and administrative law, as well as business support, anti-corruption investigations, and defense in highly complex cases. We combine deep knowledge of the law, case law, and strategic thinking—all to achieve results for our clients. For us, every case is not just a process, but a responsibility for the fate of an individual or business. We are trusted because we: <ul><li>🐍 We work honestly and openly;</li> <li>🐍 We don't make empty promises–only real strategies;</li> <li>🐍 We combine professionalism with humanity</li></ul>",
     },
     reforms: {
       title: 'News',
