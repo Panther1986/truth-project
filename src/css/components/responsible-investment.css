@@ -28,7 +28,7 @@
 }
 
 .investment-main-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
@@ -58,7 +58,7 @@
 .investment-first-title {
   /* padding-top: 48px; */
   padding-bottom: 32px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
@@ -85,7 +85,7 @@
   }
 }
 .investment-epigraph {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 15px;
@@ -116,7 +116,7 @@
   }
 }
 .investment-article-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
@@ -148,7 +148,7 @@
   }
 }
 .investment-text {
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28.5px;
@@ -217,7 +217,7 @@
   background-color: transparent;
   margin-bottom: 32px;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;

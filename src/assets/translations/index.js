@@ -4,6 +4,7 @@ const localizationData = {
       title: 'Йоганн Вольфганг фон Гете',
       firstParagraph:
         'Наружный блеск рассчитан на мгновенье, а правда переходит в поколение...',
+      logo: 'Адвокатское объединение "ФАУСТ"',
     },
     about: {
       title: 'Про нас',
@@ -64,6 +65,7 @@ const localizationData = {
       title: 'Йоганн Вольфганг фон Гете',
       firstParagraph:
         'Зовнішній блиск розрахований на мить, а правда переходить у покоління...',
+      logo: 'Адвокатське обʼєднання "ФАУСТ"',
     },
     about: {
       title: 'Про нас',
@@ -120,6 +122,7 @@ const localizationData = {
       title: 'Johann Wolfgang von Goethe',
       firstParagraph:
         'External brilliance is designed for a moment, and the truth passed into generations...',
+      logo: 'Low association "FAUST"',
     },
     about: {
       title: 'About us',

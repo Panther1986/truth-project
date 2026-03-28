@@ -36,7 +36,7 @@
 }
 
 .about-me-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
@@ -62,7 +62,7 @@
   }
 }
 .about-me-text {
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28.5px;
@@ -88,7 +88,7 @@
   }
 }
 .about-me-text-signature {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 15px;
