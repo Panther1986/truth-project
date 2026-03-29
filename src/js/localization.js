@@ -3,14 +3,17 @@ import localizationData from '../assets/translations/index.js';
 
 function getValueByPath(obj, path) {
   const keys = path.split('.');
-
   return keys.reduce((acc, key) => (acc ? acc[key] : undefined), obj);
 }
 
 function localizeElements(LANG) {
+  // ✅ язык по умолчанию — украинский
+  const currentLang = LANG || 'ua';
+
   const elements = document.querySelectorAll('[data-lang]');
   console.log(elements);
-  const localization = localizationData[LANG] || {};
+
+  const localization = localizationData[currentLang] || {};
 
   elements.forEach(element => {
     const langKey = element.getAttribute('data-lang');
@@ -21,7 +24,7 @@ function localizeElements(LANG) {
     }
   });
 
-  //   applyFooterMargin(LANG);
+  // applyFooterMargin(currentLang);
 }
 
 export default localizeElements;
